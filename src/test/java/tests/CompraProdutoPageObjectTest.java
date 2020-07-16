@@ -11,5 +11,6 @@ public class CompraProdutoPageObjectTest extends TestBase {
     public void comprarProduto(){
         HomePO home = new HomePO(driver);
         BuscaProdutoPO buscaProduto = home.buscarProduto("aquecedor");
+        buscaProduto.clicarNoProduto();
     }
 }

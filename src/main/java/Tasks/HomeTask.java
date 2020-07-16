@@ -11,6 +11,7 @@ public class HomeTask {
     public HomeTask(WebDriver driver){
         obj = new HomeObj(driver);
     }
+
     public void buscarProduto(String produto) {
         obj.getProdutoTextField().sendKeys(produto, Keys.ENTER);
     }
