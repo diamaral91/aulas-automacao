@@ -11,8 +11,9 @@ public class BuscaProdutoPO {
         this.driver = driver;
     }
 
-    public void clicarNoProduto(){
+    public DescricaoProdutoPO clicarNoProduto(){
         driver.findElement(aquecedorMondial).click();
+        return new DescricaoProdutoPO(driver);
     }
 
     private By aquecedorMondial = By.xpath("//h2[text()='A-05 Aquecedor Termo Ceramic  Mondial']");

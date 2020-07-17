@@ -15,5 +15,5 @@ public class DescricaoProdutoPO {
         driver.findElement(voltagem110).click();
     }
 
-   private By voltagem110 = By.xpath("//span[@type='Voltagem' and text()='110 volts']");
+    private By voltagem110 = By.xpath("//span[@type='Voltagem' and text()='110 volts']");
 }
